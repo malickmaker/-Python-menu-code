@@ -28,3 +28,12 @@ editmenu.add_command(label="Copy", command=donothing)
 editmenu.add_command(label="Paste", command=donothing)
 editmenu.add_command(label="Delete", command=donothing)
 editmenu.add_command(label="Select All", command=donothing)
+
+menubar.add_cascade(label="Edit", menu=editmenu)
+helpmenu = Menu(menubar, tearoff=0)
+helpmenu.add_command(label"Help Index", command=donothing)
+helpmenu.add_command(label=About...", command=donothing)
+menubar.add_cascade(label=help, menu=helpmenu)
+
+root.config(menu=menubar)
+root.mainloop()
